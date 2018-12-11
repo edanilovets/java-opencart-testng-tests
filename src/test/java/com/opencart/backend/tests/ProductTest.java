@@ -12,7 +12,6 @@ import java.util.concurrent.ThreadLocalRandom;
 import static com.opencart.backend.model.ProductRegistry.*;
 import static com.opencart.backend.model.UserRegistry.*;
 
-@Test(description = "Backend: Products editing")
 public class ProductTest extends TestBase {
 
   @Test(description = "Adding of New product with only required fields")

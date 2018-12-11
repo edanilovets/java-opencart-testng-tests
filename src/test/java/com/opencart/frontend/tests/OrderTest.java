@@ -5,7 +5,6 @@ import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 
-@Test(description = "Frontend: Orders")
 public class OrderTest extends TestBase {
 
   @Test(description = "Order product from featured on home page")

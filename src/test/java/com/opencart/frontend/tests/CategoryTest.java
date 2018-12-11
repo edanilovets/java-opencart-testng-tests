@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-@Test(description = "Frontend: Categories")
 public class CategoryTest extends TestBase{
 
   @Test(description = "Sorting of products in category by Name (A - Z)")
