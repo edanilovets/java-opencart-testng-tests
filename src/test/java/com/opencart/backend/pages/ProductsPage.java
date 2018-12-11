@@ -5,7 +5,6 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
@@ -14,16 +13,6 @@ public class ProductsPage extends BasePage {
     ProductsPage(WebDriver driver) {
         super(driver);
     }
-
-    @FindBy(xpath = "//a[@data-original-title='Add New']")
-    private WebElement addNewButton;
-    @FindBy(xpath = "//button[@data-original-title='Save']")
-    private WebElement saveButton;
-    @FindBy(xpath = "//a[@data-original-title='Cancel']")
-    private WebElement cancelButton;
-    @FindBy(xpath = "//button[@data-original-title='Delete']")
-    private WebElement deleteButton;
-
 
     public EditProductPage clickAddNewProductButton(){
         addNewButton.click();

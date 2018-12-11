@@ -14,10 +14,8 @@ public class LoginPage extends BasePage {
   //Admin login page locators
   @FindBy(id = "input-username")
   private WebElement username;
-
   @FindBy(id = "input-password")
   private WebElement password;
-
   @FindBy(xpath = "//button[contains(text(),'Login')]")
   private WebElement loginButton;
 

@@ -10,15 +10,6 @@ public class EditProductPage extends BasePage {
         super(driver);
     }
 
-    @FindBy(xpath = "//a[@data-original-title='Add New']")
-    private WebElement addNewButton;
-    @FindBy(xpath = "//button[@data-original-title='Save']")
-    private WebElement saveButton;
-    @FindBy(xpath = "//a[@data-original-title='Cancel']")
-    private WebElement cancelButton;
-    @FindBy(xpath = "//button[@data-original-title='Delete']")
-    private WebElement deleteButton;
-
     //Tabs
     @FindBy(css = "#form-product > ul > li:nth-child(2) > a")
     private WebElement tabData;

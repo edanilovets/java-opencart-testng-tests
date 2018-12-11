@@ -13,6 +13,17 @@ public class BasePage {
     PageFactory.initElements(driver, this);
   }
 
+  //Action Panel
+  @FindBy(xpath = "//a[@data-original-title='Add New']")
+  WebElement addNewButton;
+  @FindBy(xpath = "//button[@data-original-title='Save']")
+  WebElement saveButton;
+  @FindBy(xpath = "//a[@data-original-title='Cancel']")
+  WebElement cancelButton;
+  @FindBy(xpath = "//button[@data-original-title='Delete']")
+  WebElement deleteButton;
+
+  //Admin Menu
   @FindBy(id = "menu-catalog")
   private WebElement menuCatalog;
   @FindBy(xpath = "//*[@id='collapse1']/li[2]/a")
@@ -28,14 +39,21 @@ public class BasePage {
   @FindBy(xpath = "//*[@id='header']//span[contains(text(),'Logout')]/parent::a")
   private WebElement logout;
 
+  public LoginPage logout(){
+    logout.click();
+    return new LoginPage(driver);
+  }
+
   //Admin Menu methods
   public ProductsPage openProductsPage(){
     menuCatalog.click();
     menuCatalogProducts.click();
     return new ProductsPage(driver);
   }
-  public LoginPage logout(){
-    logout.click();
-    return new LoginPage(driver);
+
+  public CustomersPage openCustomersPage() {
+    menuCustomer.click();
+    menuCustomerCustomer.click();
+    return new CustomersPage(driver);
   }
 }

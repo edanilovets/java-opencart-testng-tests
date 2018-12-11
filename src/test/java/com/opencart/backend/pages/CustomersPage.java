@@ -23,30 +23,11 @@ public class CustomersPage extends BasePage {
 	@FindBy(xpath = "//button[@data-original-title='Delete']")
 	private WebElement deleteButton;
 
-	//Fields
-	@FindBy(id = "input-firstname")
-	private WebElement firstNameLocator;
-	@FindBy(id = "input-lastname")
-	private WebElement lastNameLocator;
-	@FindBy(id = "input-email")
-	private WebElement emailLocator;
-	@FindBy(id = "input-telephone")
-	private WebElement phoneLocator;
-	@FindBy(id = "input-password")
-	private WebElement passwordLocator;
-	@FindBy(id = "input-confirm")
-	private WebElement confirmLocator;
 
-	public CustomersPage addNewCustomer(Customer customer) {
+
+	public EditCustomersPage clickAddNewCustomerButton(){
 		addNewButton.click();
-		firstNameLocator.sendKeys(customer.getFirstName());
-		lastNameLocator.sendKeys(customer.getLastName());
-		emailLocator.sendKeys(customer.getEmail());
-		phoneLocator.sendKeys(customer.getPhone());
-		passwordLocator.sendKeys(customer.getPassword());
-		confirmLocator.sendKeys(customer.getPassword());
-		saveButton.click();
-		return this;
+		return new EditCustomersPage(driver);
 	}
 
 	public boolean isInCustomersList(Customer customer) {
