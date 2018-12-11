@@ -14,13 +14,13 @@ public class CustomersPage extends BasePage {
 		super(driver);
 	}
 
-	@FindBy(css = "a[data-original-title=\"Add New\"]")
+	@FindBy(xpath = "//a[@data-original-title='Add New']")
 	private WebElement addNewButton;
-	@FindBy(css = "button[data-original-title=\"Save\"]")
+	@FindBy(xpath = "//button[@data-original-title='Save']")
 	private WebElement saveButton;
-	@FindBy(css = "a[data-original-title=\"Cancel\"]")
+	@FindBy(xpath = "//a[@data-original-title='Cancel']")
 	private WebElement cancelButton;
-	@FindBy(css = "button[data-original-title=\"Delete\"]")
+	@FindBy(xpath = "//button[@data-original-title='Delete']")
 	private WebElement deleteButton;
 
 	//Fields

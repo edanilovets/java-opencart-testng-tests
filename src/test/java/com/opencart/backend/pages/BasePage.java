@@ -15,17 +15,17 @@ public class BasePage {
 
   @FindBy(id = "menu-catalog")
   private WebElement menuCatalog;
-  @FindBy(xpath = "//*[@id=\"collapse1\"]/li[2]/a")
+  @FindBy(xpath = "//*[@id='collapse1']/li[2]/a")
   private WebElement menuCatalogProducts;
   @FindBy(id = "menu-customer")
   private WebElement menuCustomer;
-  @FindBy(xpath = "//*[@id=\"collapse33\"]/li[1]/a")
+  @FindBy(xpath = "//*[@id='collapse33']/li[1]/a")
   private WebElement menuCustomerCustomer;
-  @FindBy(css = "#header > div > ul > li.dropdown > a")
-  private WebElement userLink;
-  @FindBy(css = "#header > div > ul > li.dropdown.open > ul > li:nth-child(1) > a")
+  @FindBy(xpath = "//*[@id='user-profile']/parent::a")
+  private WebElement userDropdown;
+  @FindBy(xpath = "//*[@id='header']//a[contains(text(),'Your Profile')]")
   private WebElement yourProfile;
-  @FindBy(css = "#header > div > ul > li:nth-child(2) > a")
+  @FindBy(xpath = "//*[@id='header']//span[contains(text(),'Logout')]/parent::a")
   private WebElement logout;
 
   //Admin Menu methods
