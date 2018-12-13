@@ -20,7 +20,7 @@ public class LoginPage extends BasePage {
   private WebElement loginButton;
 
   public LoginPage open() {
-    driver.get("http://localhost:8080/opencart/admin/");
+    driver.get(OPENCART_ADMIN_URL);
     return this;
   }
 

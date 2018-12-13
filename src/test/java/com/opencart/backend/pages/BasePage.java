@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class BasePage {
   public WebDriver driver;
+  public final String OPENCART_ADMIN_URL = "http://192.168.20.70:8080/opencart/admin/";
 
   BasePage(WebDriver driver) {
     this.driver = driver;

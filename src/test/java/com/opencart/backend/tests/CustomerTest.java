@@ -10,7 +10,8 @@ import org.testng.annotations.Test;
 import static com.opencart.backend.model.CustomerRegistry.getCustomer;
 import static com.opencart.backend.model.UserRegistry.getAdmin;
 
-public class CustomerTest extends TestBase {
+
+public class CustomerTest extends TestBaseRemote {
 
   @Test(description = "Adding of New customer")
   public void canAddNewCustomer() {
