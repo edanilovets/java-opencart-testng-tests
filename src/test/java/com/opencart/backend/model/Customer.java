@@ -8,6 +8,10 @@ public class Customer {
   private String email;
   private String phone;
   private String password;
+  private String address1;
+  private String country;
+  private String region;
+  private String city;
 
   public Customer withFirstName(String firstName) {
     this.firstName = firstName;
@@ -54,6 +58,42 @@ public class Customer {
     return password;
   }
 
+  public String getAddress1() {
+    return address1;
+  }
+
+  public Customer withAddress1(String address1) {
+    this.address1 = address1;
+    return this;
+  }
+
+  public String getCountry() {
+    return country;
+  }
+
+  public Customer withCountry(String country) {
+    this.country = country;
+    return this;
+  }
+
+  public String getRegion() {
+    return region;
+  }
+
+  public Customer withRegion(String region) {
+    this.region = region;
+    return this;
+  }
+
+  public String getCity() {
+    return city;
+  }
+
+  public Customer withCity(String city) {
+    this.city = city;
+    return this;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
@@ -67,4 +107,5 @@ public class Customer {
 
     return Objects.hash(email);
   }
+
 }

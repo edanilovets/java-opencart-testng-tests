@@ -9,9 +9,11 @@ import org.testng.annotations.BeforeClass;
 public class TestBase {
   public WebDriver driver;
 
+
   @BeforeClass
   public void init() {
     driver = new ChromeDriver();
+
   }
 
   @AfterClass

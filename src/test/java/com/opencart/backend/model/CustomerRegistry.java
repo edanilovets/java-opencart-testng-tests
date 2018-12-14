@@ -11,6 +11,10 @@ public class CustomerRegistry {
             .withLastName("Last" + timeStamp)
             .withEmail("main" + timeStamp + "@mail.com")
             .withPhone("123456789")
-            .withPassword("111111");
+            .withPassword("111111")
+            .withAddress1("Lomonosova st. 46/1")
+            .withCity("Kyiv")
+            .withCountry("Ukraine")
+            .withRegion("Kyiv");
   }
 }
