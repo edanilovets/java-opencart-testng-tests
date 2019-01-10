@@ -41,6 +41,11 @@
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.25</version>
         </dependency>
+        <dependency>
+            <groupId>io.github.sskorol</groupId>
+            <artifactId>webdriver-supplier</artifactId>
+            <version>0.8.0</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -57,6 +62,12 @@
                     <includes>
                         <include>**/*Test.java</include>
                     </includes>
+                    <properties>
+                        <property>
+                            <name>listener</name>
+                            <value>io.github.sskorol.listeners.BeforeMethodListener</value>
+                        </property>
+                    </properties>
                 </configuration>
                 <dependencies>
                     <dependency>
